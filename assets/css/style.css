@@ -1,7 +1,8 @@
 body {
     background-image: 
         url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/62/30/9157aa94e693d90.jpg);
-    background-size: cover;
+    /* background-size: cover; */
+    margin:0  auto;
 }
 
 .jumbotron {
@@ -18,14 +19,20 @@ body {
 #random{
     background-color: blue;
     border-radius: 5px;
-    padding-left: 30px;
+    
+    width:50%;
 }
 #winlose{
     background-color: red;
-    padding-left: 30px;
+    width:50%;
+    border-radius: 5px;
+    
 }
-.cimages{
+img{
     width:100px;
     height: 100px;
     /* background-color: yellow; */
+}
+.scorebox{
+    background-color: greenyellow;
 }
