@@ -1,0 +1,31 @@
+body {
+    background-image: 
+        url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/62/30/9157aa94e693d90.jpg);
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: #999999; 
+    color: #333333;
+}
+
+#gameRules {
+    background-color: #999999;
+    color: #333333;
+    border-radius: 5px
+}
+
+#random{
+    background-color: blue;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+#winlose{
+    background-color: red;
+    padding-left: 30px;
+}
+.cimages{
+    width:100px;
+    height: 100px;
+    /* background-color: yellow; */
+}

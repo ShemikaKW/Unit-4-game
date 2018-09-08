@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Crystals Collector!</h1>
+        </div>
+    </div>
+    <!-- Instructions -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div id="gameRules">
+
+                    <h2>Game Instructions:</h2>
+
+                    <p>At the start of each game you are given a random number.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                        your total score.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score
+                        goes above the random number.
+                    </p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Random Number -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="random">
+                        <p>Random #</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scorekeeping -->
+        <div class="col-md-6">
+            <div id="winlose">
+            <div class="row">Wins:
+                <p id="wins"></p>
+            </div>
+            <br>
+            <div class="row">Losses:
+                <p id="losses">
+                </p>
+            </div>
+            </div>
+            <br>
+
+            <!-- Crystals -->
+            <div class="container">
+                <div class="row" id="crystals">
+                    <img class="cimages" src="assets/images/diamond.jpg" alt="Diamond">
+                    <img class="cimages" src="assets/images/emerald.jpg" alt="Emerald">
+                    <img class="cimages" src="assets/images/Purple.jpg" atl="Purple">
+                    <img class="cimages" src="assets/images/ruby.jpg" alt="ruby">
+                </div>
+            </div>
+            <br>
+
+            <br>
+            <p id="message"></p>
+            <div class="row">Your Score:
+                <div id="score">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</body>
+
+</html>
