@@ -1,23 +1,21 @@
 body {
-    background-image: 
-        url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/62/30/9157aa94e693d90.jpg);
-    /* background-size: cover; */
+    background-image: url("http://www.intrawallpaper.com/static/images/rainbow_texture679.jpg");
+    background-size: cover;
     margin:0  auto;
 }
 
-.jumbotron {
-    background-color: #999999; 
-    color: #333333;
+.nav {
+    background-color:gold; 
+    border-radius: 5px;
 }
 
 #gameRules {
     background-color: #999999;
-    color: #333333;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 #random{
-    background-color: blue;
+    background-color: teal;
     border-radius: 5px;
     
     width:50%;
@@ -31,8 +29,9 @@ body {
 img{
     width:100px;
     height: 100px;
-    /* background-color: yellow; */
+    border-radius: 5px;
 }
 .scorebox{
     background-color: greenyellow;
+    border-radius: 5px;
 }
