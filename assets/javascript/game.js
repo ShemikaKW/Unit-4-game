@@ -40,11 +40,11 @@ $(document).ready(function () {
         userScore = 0;
         numberToMatch = Math.round(Math.random() * 102 + 19);
         console.log(numberToMatch);
-        //print numberToMatch to screen
+        //Prints numberToMatch to screen
         $("#random").text(numberToMatch);
         }
 
-    //function to give each crystal a random value between 1-12 each time the page is loaded
+    //Function to give each crystal a random value between 1-12 each time the page is loaded
     function makeCrystalScores() {
         for (var i = 0; i < 4; i++) {
             var crystal = Math.round(Math.random() * 12 + 1);
@@ -52,7 +52,7 @@ $(document).ready(function () {
         }
     }
 
-    //function to create crystal images and append them to the page
+    //Function to create crystal images and append them to the page
     function makeCrystalButtons () {
         for (var i = 0; i < 4; i++) {
             var crystalImage = $("<img>")
@@ -63,7 +63,7 @@ $(document).ready(function () {
         }
     }
 
-    //function for when userScore matches numberToMatch
+    //Function for when userScore matches numberToMatch
     function winner () {
         wins++;
         $("#wins").text(wins);
@@ -71,7 +71,7 @@ $(document).ready(function () {
         reset();
     }
 
-    //function for when userScore is greater than numberToMatch
+    //Function for when userScore is greater than numberToMatch
     function loser () {
         losses++;
         $("#losses").text(losses);
@@ -79,42 +79,43 @@ $(document).ready(function () {
         reset();
     }
 
-    //call the makeCrystalScores and makeCrystalButtons functions
+    //Call the makeCrystalScores and makeCrystalButtons functions
     function setUpBoard () {
         makeCrystalScores();
         makeCrystalButtons();
     }
 
-    //use jquery to make the images function as buttons
+    //Use jquery to make the images function as buttons
     setUpBoard();
     $("#crystals").on("click", "img", function(){
         console.log(this);
         var valueOfSelectedCrystal = $(this).attr("value");
-        console.log(valueOfSelectedCrystal);
-        //parseInt function to convert valueOfSelectedCrytal from string to integer
+        // console.log(valueOfSelectedCrystal);
+
+        //ParseInt function to convert valueOfSelectedCrytal from string to integer
         valueOfSelectedCrystal = parseInt(valueOfSelectedCrystal);
         userScore = userScore + valueOfSelectedCrystal;
-        console.log(userScore);
-        console.log(numberToMatch);
-        //print userScore to screen
+        // console.log(userScore);
+        // console.log(numberToMatch);
+
+        //Prints userScore to screen
         $("#score").text(userScore);
 
-            //if/else statements
-            //if userScore equals numberToMatch, wins++
+            
+            //If userScore equals numberToMatch, wins++
             if (userScore === numberToMatch) {
                 winner ();
                 reset();
             }
             
-            //if userScore is higher than numberToMatch, losses++
-            if (userScore > numberToMatch) {
+            // Else if userScore is higher than numberToMatch, losses++
+          else  if (userScore > numberToMatch) {
                 loser ();
                 reset();
             }
 
         });
 
-        //when user wins or loses, reset numberToMatch and crystal variables and userScore
-        //push those reset variables to HTML
+        //Reset after win or lose
     reset();
 });
