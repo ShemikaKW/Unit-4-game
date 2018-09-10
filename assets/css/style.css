@@ -1,29 +1,34 @@
 body {
-    background-image: url("http://www.intrawallpaper.com/static/images/rainbow_texture679.jpg");
+    background-image: url("https://wallpapertag.com/wallpaper/full/a/5/9/9216-best-abstract-background-1920x1200.jpg");
     background-size: cover;
     margin:0  auto;
 }
 
 .nav {
-    background-color:gold; 
+    background-color:turquoise; 
     border-radius: 5px;
 }
 
 #gameRules {
-    background-color: #999999;
+    background-color: grey;
     border-radius: 5px;
 }
 
 #random{
     background-color: teal;
     border-radius: 5px;
-    
-    width:50%;
+    float: left;
+    clear:left;
+    width:100%;
+    height: 88px;
+    text-align: center;
+    font-size: 45px;
 }
 #winlose{
-    background-color: red;
-    width:50%;
+    background-color: purple;
+    width:100%;
     border-radius: 5px;
+    float: left;
     
 }
 img{
@@ -32,6 +37,13 @@ img{
     border-radius: 5px;
 }
 .scorebox{
-    background-color: greenyellow;
+    background-color:fuchsia;
     border-radius: 5px;
+}
+
+#message{
+    font-size: 45px;
+}
+#score{
+    font-size: 45px;
 }
